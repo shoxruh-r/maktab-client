@@ -186,7 +186,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
-      const response = await fetch('http://localhost:3000/api/info')
+      const response = await fetch('/api/info')
       const { success, data } = await response.json()
 
       document.querySelector('.row').innerHTML = data

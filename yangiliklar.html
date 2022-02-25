@@ -186,7 +186,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', async () => {
-      const response = await fetch('http://localhost:3000/api/news')
+      const response = await fetch('/api/news')
       const { success, data } = await response.json()
       let app = ''
 
@@ -195,7 +195,7 @@
           `<div class="col-md-6 d-flex align-items-stretch">
         <div class="card">
           <div class="card-img">
-            <img src="http://localhost:3000/api/public/${news.image}" alt="...">
+            <img src="/api/public/${news.image}" alt="...">
           </div>
         <div class="card-body">
           <h5 class="card-title"><a href="">${news.title}</a></h5>
